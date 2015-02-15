@@ -25,15 +25,15 @@ difference() {
 
 
 
-  # translate([0,spoolID/2+1,spoolFlangeT+spoolT-5]) 
+# translate([0,spoolID/2+1,spoolFlangeT+spoolT-5]) 
   rotate([90,-90,0])  {
-  union() {
-  translate([0,0,-1]) cylinder(r=6/2, h=3);
-  translate([0,0,-1]) cylinder(r=screwD/2, h=spoolID+3, $fn=17);
-  translate([0,0,spoolID-2]) cylinder(r=6/2, h=3);
-}
-}
+    union() {
+      translate([0,0,-1]) cylinder(r=6/2, h=3);
+      translate([0,0,-1]) cylinder(r=screwD/2, h=spoolID+3, $fn=17);
+      translate([0,0,spoolID-2]) cylinder(r=6/2, h=3);
+    }
+  }
 
 }
 
-  // # translate([8, 26.5, 13.25]-[27,27,0]) cube ([1,1,100]);
+// # translate([8, 26.5, 13.25]-[27,27,0]) cube ([1,1,100]);
